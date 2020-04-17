@@ -182,11 +182,14 @@ icon-name请看[这里](https://github.com/webbukkit/dynmap/wiki/Using-markers#m
    
    在[这里](https://www.wjx.cn/jq/72213601.aspx)回答问卷，等待被添加
    
-   | 游戏id         | 色号      |
-   | -------------- | --------- |
-   | 北大红（专属） | `#820010` |
-   |                |           |
-   |                |           |
+   | 游戏id          | 色号      |
+   | --------------- | --------- |
+   | 北大红（专属）  | `#820010` |
+   | Lokdora         | `#4C7F99` |
+   | Viktor_He       | `#DC143C` |
+   | berilliumcopper | `#006BAC` |
+   | TemplarBruno    | `#1453AD` |
+   | a1q2w3s         | `#89CFF0` |
    
 
  ## 创造服规范
