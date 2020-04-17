@@ -27,6 +27,7 @@ jobs:
     - name: Checkout submodules
       run: |
         git submodule update
+        git submodule sync --recursive
     - name: Install hexo dependencies
       run: |
         npm i -g hexo-cli 
@@ -38,7 +39,7 @@ jobs:
         hexo clean
         hexo generate
         ls
-    - name: Publish to gh-pages
+    - name: setup ssh
       env:
           ACTIONS_DEPLOY_KEY: ${{ secrets.PKUMC_ACTION_DEPLOY_KEY }}
       run: |
