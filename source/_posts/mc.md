@@ -4,7 +4,9 @@ title: 欢迎来到PKUer的Minecraft服务器！
 > 请确保自己读完全文,以免造成信息遗漏!
 
 <center><h1>我如何才能开始游玩？</h1></center>
----
+
+-------
+
 
 ### 如果你是新手
 
@@ -35,6 +37,7 @@ title: 欢迎来到PKUer的Minecraft服务器！
 
 
 <center><h1>我如何才能联系到大家?</h1></center>
+
 ---
 
 
@@ -44,13 +47,17 @@ title: 欢迎来到PKUer的Minecraft服务器！
 
 
 <center><h2>我们提供了在线地图</h2></center>
+
 ---
-| 主生存世界(main)                                             | PKU建筑还原世界(pku)                                         |
+
+| 主生存世界(main)    | PKU建筑还原世界(pku)          |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | <a href="http://mc.alicespace.cn:8124/index.html"><img height="30px;" src="https://img.shields.io/badge/map-available-green.svg"></a> | <a href="http://mc.alicespace.cn:8125/index.html"><img height="30px;" src="https://img.shields.io/badge/map-available-green.svg"></a> |
 
 <center><h1>社区守则(建议稿)与新手指南</h1></center>
+
 ---
+
 [社区守则建设中,欢迎贡献](https://github.com/Alice-space/pku-minecraft-rules)
 
 ## 总则
@@ -193,7 +200,8 @@ icon-name请看[这里](https://github.com/webbukkit/dynmap/wiki/Using-markers#m
 
 
 <center><h1>一些信息</h1></center>
----
+
+-------
 
 
 ## 关于Minecraft
