@@ -99,6 +99,6 @@ theme: hexo-theme-lite
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://gitee.com/alicespace/pkuMinecraft_web.git # https://bitbucket.org/JohnSmith/johnsmith.bitbucket.io
+  repo: git@gitee.com:alicespace/pkuMinecraft_web.git # https://bitbucket.org/JohnSmith/johnsmith.bitbucket.io
   branch: master
   message: auto deploy
