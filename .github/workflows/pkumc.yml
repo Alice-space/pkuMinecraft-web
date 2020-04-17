@@ -47,6 +47,7 @@ jobs:
     - name: Checkout submodules
       run: |
         git submodule init && git submodule update
+        git clone https://gitee.com/alicespace/pkuMinecraft_web.git .deploy_git
 
     - name: Deploy
       run: |
