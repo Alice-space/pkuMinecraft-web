@@ -16,7 +16,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [12.x]
+        node-version: [13.x]
 
     steps:
     - uses: actions/checkout@v2
@@ -28,17 +28,12 @@ jobs:
       run: |
         git submodule update
         git submodule sync --recursive
+        cd theme
+        ls -l
     - name: Install hexo dependencies
       run: |
         npm i -g hexo-cli 
         npm install hexo-deployer-git --save
-    - name: Generate blog
-      env:
-        TZ: Asia/Shanghai
-      run: |
-        hexo clean
-        hexo generate
-        ls
     - name: setup ssh
       env:
           ACTIONS_DEPLOY_KEY: ${{ secrets.PKUMC_ACTION_DEPLOY_KEY }}
@@ -53,6 +48,5 @@ jobs:
           git config --global user.email 'lizhihao0525@gmail.com'
     - name: Deploy
       run: |
-          hexo generate
-          # generate and depoly
-          hexo deploy
+          hexo generate && hexo deploy
+          
