@@ -98,7 +98,7 @@ icon-name请看[这里](https://github.com/webbukkit/dynmap/wiki/Using-markers#m
 #标示线和区域(用指定值替换尖括号参数，方括号为可选参数)
 
 /dmarker addcorner : 将自己坐标添加到列表
-/dmarker addcorner <x> <z> [world] : 将指定坐标点添加到列表,不指定world为当前所在维度
+/dmarker addcorner <x> <z> <world> : 将指定坐标点添加到列表,必须指定world为当前所在维度,如main,main_nether,main_the_end
 /dmarker clearcorners : 清除列表
 
 /dmarker addarea <label> color:<RRGGBB> set:<set_name> ：使用列表的点围成区域,添加到集合set_name，名为label，颜色RRGGBB，未指明set将添加至默认集合，which is irregular
