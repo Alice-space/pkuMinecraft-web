@@ -20,20 +20,17 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+      
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: Checkout submodules
-      run: |
-        git submodule update
-        git submodule sync --recursive
-        cd themes
-        ls -l
+      
     - name: Install hexo dependencies
       run: |
         npm i -g hexo-cli 
         npm install hexo-deployer-git --save
+        
     - name: setup ssh
       env:
           ACTIONS_DEPLOY_KEY: ${{ secrets.PKUMC_ACTION_DEPLOY_KEY }}
@@ -46,6 +43,11 @@ jobs:
           # set git infomation
           git config --global user.name 'Alice-space'
           git config --global user.email 'lizhihao0525@gmail.com'
+          
+    - name: Checkout submodules
+      run: |
+        git submodule update
+
     - name: Deploy
       run: |
           hexo generate && hexo deploy
