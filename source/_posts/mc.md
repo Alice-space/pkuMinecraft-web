@@ -4,7 +4,6 @@ title: 欢迎来到PKUer的Minecraft服务器！
 > 请确保自己读完全文,以免造成信息遗漏!
 
 <center><h1>我如何才能开始游玩？</h1></center>
-
 ---
 
 ### 如果你是新手
@@ -36,7 +35,6 @@ title: 欢迎来到PKUer的Minecraft服务器！
 
 
 <center><h1>我如何才能联系到大家?</h1></center>
-
 ---
 
 
@@ -46,14 +44,12 @@ title: 欢迎来到PKUer的Minecraft服务器！
 
 
 <center><h2>我们提供了在线地图</h2></center>
-
 ---
 | 主生存世界(main)                                             | PKU建筑还原世界(pku)                                         |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | <a href="http://mc.alicespace.cn:8124/index.html"><img height="30px;" src="https://img.shields.io/badge/map-available-green.svg"></a> | <a href="http://mc.alicespace.cn:8125/index.html"><img height="30px;" src="https://img.shields.io/badge/map-available-green.svg"></a> |
 
 <center><h1>社区守则(建议稿)与新手指南</h1></center>
-
 ---
 [社区守则建设中,欢迎贡献](https://github.com/Alice-space/pku-minecraft-rules)
 
@@ -84,42 +80,70 @@ Alice_space(A pkuer minecraft server)服务器(以下简称"本服")，是由几
 本服设置了在线地图，任何玩家可以在地图上设置点、线、区域。
 
 1. 标示方法：
+
 ```
-#标示点（尖括号为可选参数）
-/dmarker add <label> <set:set_name> <icon:icon_name>： 添加标记点，并添加到集合set_name，名为label
-/dmarker delete <label> ： 删除标记点，名为label
+#标示点(用指定值替换尖括号参数，方括号为可选参数)
+/dmarker add <label> set:<set_name> icon:<icon_name>： 在当前坐标处添加标记点到集合set_name，名为label
+/dmarker delete <label> ： 删除标记点，名为label，更改位置请删除原有再重新添加
+/dmarker list [set:<markerset-id>] ： 列出指定集合中的点，一般不需填写集合
 ```
 icon-name请看[这里](https://github.com/webbukkit/dynmap/wiki/Using-markers#marker-icons)
 ```
-#标示线和区域（尖括号为可选参数）
-/dmarker addcorner : 将坐标点添加到列表
-/dmarker addcorner <x> <z> <world> : 将指定坐标点添加到列表
+#标示线和区域(用指定值替换尖括号参数，方括号为可选参数)
+
+/dmarker addcorner : 将自己坐标添加到列表
+/dmarker addcorner <x> <z> [world] : 将指定坐标点添加到列表,不指定world为当前所在维度
 /dmarker clearcorners : 清除列表
 
-/dmarker addarea <label> <color:RRGGBB> <set:set_name>：使用列表的点围成区域,添加到集合set_name，名为label，颜色RRGGBB
-/dmarker deletearea <label> : 删除名为label区域
+/dmarker addarea <label> color:<RRGGBB> set:<set_name> ：使用列表的点围成区域,添加到集合set_name，名为label，颜色RRGGBB，未指明set将添加至默认集合，which is irregular
+/dmarker deletearea id:<area-id> set:<markerset-id> : 删除区域, id 从listareas可知
 
-/dmarker addline <label> <color:RRGGBB> <set:set_name>: 添加列表的点连接的线，添加到集合set_name，名为label，颜色RRGGBB
-/dmarker deleteline <label> : 删除线，名为label
+/dmarker listareas set:<markerset-id> : 列出指定集合中的区域，可以找到需要的id
+
+/dmarker addline <label> color:<RRGGBB> set:<set_name> : 添加列表的点连接的线，添加到集合set_name，名为label，颜色RRGGBB,原则上线应添加入railway集合
+/dmarker deleteline id:<line-id> set:<markerset-id> : 删除线，id从listlines可知
+
+/dmarker listlines set:<markerset-id> : 列出指定集合中的线，一般markerset-id是railway
 ```
+
 2. 举例说明：
-```
-# 绘制多边形、折线ABCDE
 
-#添加列表
+```
+# 在扫荡过一个结构后添加记录
+/dmarker add structure_name_<structure_id>  set:struct <icon:icon_name>: 建议使用pirateflag等易于辨识的icon
+
+# 绘制矩形
+
+# 添加列表
+/dmarker addcorner <xA> <zA>
+/dmarker addcorner <xB> <zB>
+
+#矩形
+/dmaker addarea label color:RRGGBB set:set_name ：使用AB点作为对角添加区域，添加进集合set_name，名为label，颜色RRGGBB
+
+# 绘制多边形、折线ABCDE
+# 添加列表
 /dmarker addcorner <xA> <zA>
 /dmarker addcorner <xB> <zB>
 /dmarker addcorner <xC> <zC>
 /dmarker addcorner <xD> <zD>
 /dmarker addcorner <xE> <zE>
 
-#多边形
-/dmarker addarea <label> <color:RRGGBB> <set:set_name>：使用ABCDE点围成区域,添加到集合set_name，名为label，颜色RRGGBB
+# 多边形
+/dmarker addarea label color:RRGGBB set:set_name：使用ABCDE点围成区域,添加到集合set_name，名为label，颜色RRGGBB
 
-#折线
-/dmarker addline <label> <color:RRGGBB> <set:set_name>: 添加ABCDE连接的线，添加到集合set_name，名为label，颜色RRGGBB
+# 折线
+/dmarker addline label color:RRGGBB set:set_name: 添加ABCDE连接的线，添加到集合set_name，名为label，颜色RRGGBB
 
 #绘制结束后ABCDE会被自动清理
+
+# 添加道路
+/dmarker addcorner <xA> <zA>
+/dmarker addcorner <xB> <zB>
+...
+
+/dmarker addline <label> color:RRGGBB set:railway
+
 ```
 
 ### 3. 公共设施管理办法
@@ -130,7 +154,7 @@ icon-name请看[这里](https://github.com/webbukkit/dynmap/wiki/Using-markers#m
 
 2. 在完成了上述事项之后，您可以选择**任意**大小的一片区域进行建造，并将您选择的区域的坐标、您的游戏id、添加时间添加到**公共设施列表**中。
 
-3. 铁路请添加到集合`railway`，公共建筑添加到`public`，私人领地添加到`private`,天然结构(末地门,遗迹)添加到`struct`.为自己选择**一种**颜色，**并为自己的所有设施添加该颜色**。
+3. 铁路请添加到集合`railway`，公共建筑添加到`public`，私人领地添加到`private`,**扫荡过的**天然结构(末地门,遗迹)添加到`struct`.为自己选择**一种**颜色，**并为自己的所有设施添加该颜色**。
 
 4. 如您在建造过程中遇到以下问题，请联系该区域的建造者协商解决。
    - 空间冲突；
@@ -169,7 +193,6 @@ icon-name请看[这里](https://github.com/webbukkit/dynmap/wiki/Using-markers#m
 
 
 <center><h1>一些信息</h1></center>
-
 ---
 
 
