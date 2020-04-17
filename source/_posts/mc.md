@@ -98,7 +98,7 @@ icon-name请看[这里](https://github.com/webbukkit/dynmap/wiki/Using-markers#m
 #标示线和区域(用指定值替换尖括号参数，方括号为可选参数)
 
 /dmarker addcorner : 将自己坐标添加到列表
-/dmarker addcorner <x> <z> <world> : 将指定坐标点添加到列表,必须指定world为当前所在维度,如main,main_nether,main_the_end
+/dmarker addcorner <x> <y> <z> <world> : 将指定坐标点添加到列表,必须指定world为当前所在维度,如main,main_nether,main_the_end
 /dmarker clearcorners : 清除列表
 
 
@@ -121,19 +121,19 @@ icon-name请看[这里](https://github.com/webbukkit/dynmap/wiki/Using-markers#m
 # 绘制矩形
 
 # 添加列表
-/dmarker addcorner <xA> <zA>
-/dmarker addcorner <xB> <zB>
+/dmarker addcorner <xA> <yA> <zA> <world> # world: main,main_nether,main_the_end
+/dmarker addcorner <xB> <yB> <zB> 
 
 #矩形
 /dmaker addarea label color:RRGGBB fillcolor:RRGGBB set:set_name ：使用AB点作为对角添加区域，添加进集合set_name，名为label，颜色RRGGBB
 
 # 绘制多边形、折线ABCDE
 # 添加列表
-/dmarker addcorner <xA> <zA>
-/dmarker addcorner <xB> <zB>
-/dmarker addcorner <xC> <zC>
-/dmarker addcorner <xD> <zD>
-/dmarker addcorner <xE> <zE>
+/dmarker addcorner <xA> <yA> <zA> <world> # world: main,main_nether,main_the_end
+/dmarker addcorner <xB> <yB> <zB> 
+/dmarker addcorner <xC> <yC> <zC>
+/dmarker addcorner <xD> <yD> <zD>
+/dmarker addcorner <xE> <yE> <zE>
 
 # 多边形
 /dmarker addarea label color:RRGGBB fillcolor:RRGGBB set:set_name：使用ABCDE点围成区域,添加到集合set_name，名为label，颜色RRGGBB
@@ -144,9 +144,11 @@ icon-name请看[这里](https://github.com/webbukkit/dynmap/wiki/Using-markers#m
 #绘制结束后ABCDE会被自动清理
 
 # 添加道路
-/dmarker addcorner <xA> <zA>
-/dmarker addcorner <xB> <zB>
-...
+/dmarker addcorner <xA> <yA> <zA> <world> # world: main,main_nether,main_the_end
+/dmarker addcorner <xB> <yB> <zB> 
+/dmarker addcorner <xC> <yC> <zC>
+/dmarker addcorner <xD> <yD> <zD>
+/dmarker addcorner <xE> <yE> <zE>
 
 /dmarker addline <label> color:RRGGBB set:railway
 
