@@ -57,8 +57,7 @@ title: 欢迎来到PKUer的Minecraft服务器！
 <center><h1>社区守则(建议稿)与新手指南</h1></center>
 
 ---
-
-[社区守则建设中,欢迎贡献](https://github.com/Alice-space/pku-minecraft-rules)
+[社区守则建设中,欢迎贡献](https://github.com/Alice-space/pkuMinecraft-web.git)
 
 ## 总则
 Alice_space(A pkuer minecraft server)服务器(以下简称"本服")，是由几个来自北京大学的对于minecraft有浓厚兴趣的同学出于爱好目的**无偿自愿**搭建的，与北京大学官方**无任何关系**。本服成员亦不得以学校官方名义做任何宣传活动。
