@@ -28,7 +28,7 @@ jobs:
       run: |
         git submodule update
         git submodule sync --recursive
-        cd theme
+        cd themes
         ls -l
     - name: Install hexo dependencies
       run: |
