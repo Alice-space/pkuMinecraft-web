@@ -1,0 +1,59 @@
+# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: pkumc auto deploy
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [10.x, 12.x]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: Checkout submodules
+      run: |
+        git submodule update
+    - name: Install hexo dependencies
+      run: |
+        cd main
+        yarn
+        npm i -g hexo-cli 
+        npm install hexo-deployer-git --save
+    - name: Generate blog
+      env:
+        TZ: Asia/Shanghai
+      run: |
+        hexo clean
+        hexo generate
+        ls
+    - name: Publish to gh-pages
+      env:
+          ACTIONS_DEPLOY_KEY: ${{ secrets.PKUMC_ACTION_DEPLOY_KEY }}
+      run: |
+          # set up private key for deploy
+          mkdir -p ~/.ssh/
+          echo "$ACTIONS_DEPLOY_KEY" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan gitee.com >> ~/.ssh/known_hosts
+          # set git infomation
+          git config --global user.name 'Alice-space'
+          git config --global user.email 'lizhihao0525@gmail.com'
+    - name: Deploy
+      run: |
+          hexo generate
+          # generate and depoly
+          hexo deploy
