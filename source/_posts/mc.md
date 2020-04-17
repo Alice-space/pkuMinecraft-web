@@ -102,13 +102,13 @@ icon-name请看[这里](https://github.com/webbukkit/dynmap/wiki/Using-markers#m
 /dmarker clearcorners : 清除列表
 
 
-/dmarker addarea <label> color:<RRGGBB> fillcolor:<RRGGBB> set:<set_name> ：使用列表的点围成区域,添加到集合set_name，名为label，填充颜色RRGGBB，未指明set将添加至默认集合，which is irregular
-/dmarker deletearea id:<area-id> set:<markerset-id> : 删除区域, id 从listareas可知
-/dmarker listareas set:<markerset-id> : 列出指定集合中的区域，可以找到需要的id
+/dmarker addarea <label> color:<RRGGBB> fillcolor:<RRGGBB> set:<set_name> ：使用列表的点围成区域,添加到集合set_name，名为label，填充颜色RRGGBB，未指明set将添加至默认集合
+/dmarker deletearea label set:<markerset-id> : 删除区域label
+/dmarker listareas set:<markerset-id> : 列出指定集合中的区域
 
 
 /dmarker addline <label> color:<RRGGBB> set:<set_name> : 添加列表的点连接的线，添加到集合set_name，名为label，颜色RRGGBB,原则上线应添加入railway集合
-/dmarker deleteline id:<line-id> set:<markerset-id> : 删除线，id从listlines可知
+/dmarker deleteline label set:<markerset-id> : 删除线label
 /dmarker listlines set:<markerset-id> : 列出指定集合中的线，一般markerset-id是railway
 ```
 
@@ -116,7 +116,7 @@ icon-name请看[这里](https://github.com/webbukkit/dynmap/wiki/Using-markers#m
 
 ```
 # 在扫荡过一个结构后添加记录
-/dmarker add structure_name_<structure_id>  set:struct <icon:icon_name>: 建议使用pirateflag等易于辨识的icon
+/dmarker add <label> set:struct <icon:icon_name>: 添加名为label的点,建议使用pirateflag等易于辨识的icon
 
 # 绘制矩形
 
