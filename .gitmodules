@@ -1,0 +1,3 @@
+[submodule "themes/hexo-theme-lite"]
+	path = themes/hexo-theme-lite
+	url = https://github.com/Alice-space/hexo-theme-lite.git
