@@ -101,14 +101,14 @@ icon-name请看[这里](https://github.com/webbukkit/dynmap/wiki/Using-markers#m
 /dmarker addcorner <x> <z> <world> : 将指定坐标点添加到列表,必须指定world为当前所在维度,如main,main_nether,main_the_end
 /dmarker clearcorners : 清除列表
 
-/dmarker addarea <label> color:<RRGGBB> set:<set_name> ：使用列表的点围成区域,添加到集合set_name，名为label，颜色RRGGBB，未指明set将添加至默认集合，which is irregular
-/dmarker deletearea id:<area-id> set:<markerset-id> : 删除区域, id 从listareas可知
 
+/dmarker addarea <label> color:<RRGGBB> fillcolor:<RRGGBB> set:<set_name> ：使用列表的点围成区域,添加到集合set_name，名为label，填充颜色RRGGBB，未指明set将添加至默认集合，which is irregular
+/dmarker deletearea id:<area-id> set:<markerset-id> : 删除区域, id 从listareas可知
 /dmarker listareas set:<markerset-id> : 列出指定集合中的区域，可以找到需要的id
+
 
 /dmarker addline <label> color:<RRGGBB> set:<set_name> : 添加列表的点连接的线，添加到集合set_name，名为label，颜色RRGGBB,原则上线应添加入railway集合
 /dmarker deleteline id:<line-id> set:<markerset-id> : 删除线，id从listlines可知
-
 /dmarker listlines set:<markerset-id> : 列出指定集合中的线，一般markerset-id是railway
 ```
 
@@ -125,7 +125,7 @@ icon-name请看[这里](https://github.com/webbukkit/dynmap/wiki/Using-markers#m
 /dmarker addcorner <xB> <zB>
 
 #矩形
-/dmaker addarea label color:RRGGBB set:set_name ：使用AB点作为对角添加区域，添加进集合set_name，名为label，颜色RRGGBB
+/dmaker addarea label color:RRGGBB fillcolor:RRGGBB set:set_name ：使用AB点作为对角添加区域，添加进集合set_name，名为label，颜色RRGGBB
 
 # 绘制多边形、折线ABCDE
 # 添加列表
@@ -136,7 +136,7 @@ icon-name请看[这里](https://github.com/webbukkit/dynmap/wiki/Using-markers#m
 /dmarker addcorner <xE> <zE>
 
 # 多边形
-/dmarker addarea label color:RRGGBB set:set_name：使用ABCDE点围成区域,添加到集合set_name，名为label，颜色RRGGBB
+/dmarker addarea label color:RRGGBB fillcolor:RRGGBB set:set_name：使用ABCDE点围成区域,添加到集合set_name，名为label，颜色RRGGBB
 
 # 折线
 /dmarker addline label color:RRGGBB set:set_name: 添加ABCDE连接的线，添加到集合set_name，名为label，颜色RRGGBB
