@@ -102,3 +102,14 @@ deploy:
   repo: git@gitee.com:alicespace/pkuMinecraft_web.git # https://bitbucket.org/JohnSmith/johnsmith.bitbucket.io
   branch: master
   message: auto deploy
+
+  markdown_it_plus:
+    highlight: true
+    html: true
+    xhtmlOut: true
+    breaks: true
+    langPrefix:
+    linkify: true
+    typographer:
+    quotes: “”‘’
+    pre_class: highlight
