@@ -27,6 +27,8 @@ jobs:
       run: |
         npm i -g hexo-cli 
         npm install hexo-deployer-git --save
+        npm un hexo-renderer-marked --save
+        npm i hexo-renderer-markdown-it-plus --save
         
     - name: setup ssh
       env:
