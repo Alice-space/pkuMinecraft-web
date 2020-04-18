@@ -6,12 +6,9 @@ name: pkumc auto deploy
 on:
   push:
     branches: [ master ]
-  pull_request:
-    branches: [ master ]
 
 jobs:
   build:
-    if: github.event.pull_request.merged == true || github.event.push == true
     runs-on: ubuntu-latest
 
     strategy:
