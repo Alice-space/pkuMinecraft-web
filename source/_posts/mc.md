@@ -4,7 +4,6 @@ title: 欢迎来到PKUer的Minecraft服务器！
 > 请确保自己读完全文,以免造成信息遗漏!
 
 <center><h1>我如何才能开始游玩？</h1></center>
-
 -------
 
 
@@ -37,7 +36,6 @@ title: 欢迎来到PKUer的Minecraft服务器！
 
 
 <center><h1>我如何才能联系到大家?</h1></center>
-
 ---
 
 
@@ -47,7 +45,6 @@ title: 欢迎来到PKUer的Minecraft服务器！
 
 
 <center><h2>我们提供了在线地图</h2></center>
-
 ---
 
 | 主生存世界(main)    | PKU建筑还原世界(pku)          |
@@ -55,7 +52,6 @@ title: 欢迎来到PKUer的Minecraft服务器！
 | <a href="http://mc.alicespace.cn:8124/index.html"><img height="30px;" src="https://img.shields.io/badge/map-available-green.svg"></a> | <a href="http://mc.alicespace.cn:8125/index.html"><img height="30px;" src="https://img.shields.io/badge/map-available-green.svg"></a> |
 
 <center><h1>社区守则(建议稿)与新手指南</h1></center>
-
 ---
 [社区守则建设中,欢迎贡献](https://github.com/Alice-space/pkuMinecraft-web.git)
 
@@ -194,6 +190,14 @@ icon-name请看[这里](https://github.com/webbukkit/dynmap/wiki/Using-markers#m
    | a1q2w3s         | `#89CFF0` |
    
 
+### 4. 下界基岩上层及地狱门系统管理办法
+
+下界基岩上层，即y128及以上空间，特别是其上修建的道路系统，原则上均为公有，对原有设施进行改动或建设可能对未来规划造成影响的设施，均需首先告知其他人并经由同意。
+
+1. **现行道路系统说明：**现基岩上层通过冰道连接，材质不限，宽度一般为2，两侧由木制栅栏包围，顶部铺设按钮，玩家可在两侧建设下界传送门（下称地狱门）与主世界连接，从而享受交通系统的便利。
+2. 冰道添加时，方便起见请综合考虑新增道路长度和主路（即长度较长的路）分支数目，建设易于理解的系统，缺少材料可向其他人借用（冰，木头或精确采集）
+3. 地狱门新增时确保不会和原有地狱门发生冲突，一方面尽量增加新增地狱门和原有地狱门的距离（区域距离较短时可考虑共享地狱门），同时要将两个维度的门对齐（意味着必须准备两个门的材料），即在下界基岩顶部建设的门，其有效位置（紫色的传送门方块）应至少有一个满足关系：$$x_{nether}=x_{overworld}/8,z_{nether}=z_{overworld}/8$$，其中带nether角标的为下界传送门方块的坐标，overworld即主世界下界传送门方块的坐标，除法为整数除法，向下取整。参考wiki[地狱门搜索算法](https://minecraft-zh.gamepedia.com/%E4%B8%8B%E7%95%8C%E4%BC%A0%E9%80%81%E9%97%A8#.E6.90.9C.E7.B4.A2.E5.B9.B6.E5.88.9B.E5.BB.BA.E4.BC.A0.E9.80.81.E9.97.A8)
+
  ## 创造服规范
 
 待修订
@@ -204,7 +208,6 @@ icon-name请看[这里](https://github.com/webbukkit/dynmap/wiki/Using-markers#m
 
 
 <center><h1>一些信息</h1></center>
-
 -------
 
 
