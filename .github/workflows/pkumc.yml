@@ -5,7 +5,7 @@ name: pkumc auto deploy
 
 on:
   push:
-    branches: [ master ]
+    branches: [ deploy ]
 
 jobs:
   build:
