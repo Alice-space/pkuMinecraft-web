@@ -44,7 +44,7 @@ math: true
 
 | <a href="http://qr.liantu.com/api.php?text=https://weixin.qq.com/g/Aarp41Goo0gmEe26"><i class="fa fa-weixin fa-3x"></i></a>     | <a href="https://t.me/joinchat/HW1QVxPQH74HaCiaKRmTnQ"><i class="fa fa-telegram fa-3x"></i></a> |
 | ---------- | ----------------------------------------------------- |
-| [二维码](http://qr.liantu.com/api.php?text=https://weixin.qq.com/g/Aarp41Goo0gmEe26) | [链接](https://t.me/joinchat/HW1QVxPQH74HaCiaKRmTnQ)  |
+| [二维码](http://qr.liantu.com/api.php?text=https://weixin.qq.com/g/AdWXfm2Be4k0eArv) | [链接](https://t.me/joinchat/HW1QVxPQH74HaCiaKRmTnQ)  |
 
 
 <center><h2>我们提供了在线地图</h2></center>
