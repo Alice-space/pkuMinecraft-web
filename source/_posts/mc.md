@@ -42,7 +42,7 @@ math: true
 ---
 
 
-| <a href="http://qr.liantu.com/api.php?text=https://weixin.qq.com/g/Aarp41Goo0gmEe26"><i class="fa fa-weixin fa-3x"></i></a>     | <a href="https://t.me/joinchat/HW1QVxPQH74HaCiaKRmTnQ"><i class="fa fa-telegram fa-3x"></i></a> |
+| <a href="http://qr.liantu.com/api.php?text=https://weixin.qq.com/g/ASIByVJDhNui0HxV"><i class="fa fa-weixin fa-3x"></i></a>     | <a href="https://t.me/joinchat/HW1QVxPQH74HaCiaKRmTnQ"><i class="fa fa-telegram fa-3x"></i></a> |
 | ---------- | ----------------------------------------------------- |
 | [二维码](http://qr.liantu.com/api.php?text=https://weixin.qq.com/g/AdWXfm2Be4k0eArv) | [链接](https://t.me/joinchat/HW1QVxPQH74HaCiaKRmTnQ)  |
 
@@ -198,7 +198,7 @@ icon-name请看[这里](https://github.com/webbukkit/dynmap/wiki/Using-markers#m
 
 下界基岩上层，即y128及以上空间，特别是其上修建的道路系统，原则上均为公有，对原有设施进行改动或建设可能对未来规划造成影响的设施，均需首先告知其他人并经由同意。
 
-1. **现行道路系统说明：**现基岩上层通过冰道连接，材质不限，宽度一般为2，两侧由木制栅栏包围，顶部铺设按钮，玩家可在两侧建设下界传送门（下称地狱门）与主世界连接，从而享受交通系统的便利。
+1. **现行道路系统说明**：现基岩上层通过冰道连接，材质不限，宽度一般为2，两侧由木制栅栏包围，顶部铺设按钮，玩家可在两侧建设下界传送门（下称地狱门）与主世界连接，从而享受交通系统的便利。
 2. 冰道添加时，方便起见请综合考虑新增道路长度和主路（即长度较长的路）分支数目，建设易于理解的系统，缺少材料可向其他人借用（冰，木头或精确采集）
 3. 地狱门新增时确保不会和原有地狱门发生冲突，一方面尽量增加新增地狱门和原有地狱门的距离（区域距离较短时可考虑共享地狱门），同时要将两个维度的门对齐（意味着必须准备两个门的材料），即在下界基岩顶部建设的门，其有效位置（紫色的传送门方块）应至少有一个满足关系：
 $$x_{nether}=x_{overworld}/8,z_{nether}=z_{overworld}/8$$
