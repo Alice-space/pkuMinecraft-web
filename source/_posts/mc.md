@@ -35,7 +35,7 @@ math: true
 
 - 版本`1.15.2`,纯净生存
 - 服务器地址`mc.alicespace.cn`
-
+- **ipv6服务器地址（尽可能使用）**`mcv6.alicespace.cn`
 
 <center><h1>我如何才能联系到大家?</h1></center>
 
