@@ -70,6 +70,10 @@ Alice_space(A pkuer minecraft server)服务器(以下简称"本服")，是由几
 
 - 创造服：`Paper`服务端 `1.15.2`创造模式，主题为还原pku建筑情况
 
+**切换方式**
+进入游戏后在聊天栏输入命令
+- `/server main` 进入生存服
+- `/server pku` 进入创造服
 ## 生存服规范
 ### 1. 所有制
 
