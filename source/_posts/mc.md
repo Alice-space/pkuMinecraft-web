@@ -42,7 +42,7 @@ math: true
 ---
 
 
-| <a href="http://qr.liantu.com/api.php?text=https://weixin.qq.com/g/AdogKBRgH9yz9-pS"><i class="fa fa-weixin fa-3x"></i></a>     | <a href="https://t.me/joinchat/HW1QVxPQH74HaCiaKRmTnQ"><i class="fa fa-telegram fa-3x"></i></a> |
+| <a href="http://qr.liantu.com/api.php?text=https://weixin.qq.com/g/AUkNZ2uhKbRdloWm"><i class="fa fa-weixin fa-3x"></i></a>     | <a href="https://t.me/joinchat/HW1QVxPQH74HaCiaKRmTnQ"><i class="fa fa-telegram fa-3x"></i></a> |
 | ---------- | ----------------------------------------------------- |
 | [二维码](http://qr.liantu.com/api.php?text=https://weixin.qq.com/g/AdWXfm2Be4k0eArv) | [链接](https://t.me/joinchat/HW1QVxPQH74HaCiaKRmTnQ)  |
 
