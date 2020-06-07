@@ -9,12 +9,12 @@ wistomize 200
 Viktor_He 300
 TemplarBruno 50
 Lokdora 0.5
-sunknight 2.33
+sunknight 10.00
 gfdsggafg 15
 _Vittorio_Veneto 200
 Francio 50
 VariantConst 128
-beryllium 6
+beryllium 10.07
 chloroquine 66.6
 TomCty1120 8.88
 SiriusNY 20
