@@ -1,0 +1,10 @@
+the_Fool 300
+wistomize 200
+Viktor_He 300
+TemplarBruno 50
+Lokdora 0.5
+sunknight 2.33
+gfdsggafg 15
+_Vittorio_Veneto 200
+Francio 50
+VariantConst 128
