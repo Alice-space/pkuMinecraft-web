@@ -16,5 +16,5 @@ Francio 50
 VariantConst 128
 beryllium 10.07
 chloroquine 66.6
-TomCty1120 8.88
+TomCty1120 11
 SiriusNY 20
